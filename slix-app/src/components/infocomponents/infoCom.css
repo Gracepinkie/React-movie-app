@@ -1,0 +1,68 @@
+.info-container {
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 70px 45px;
+  height: 550px;
+}
+.appName{
+    color:  var(--400);
+}
+.info > p::first-line {
+  color: cornsilk;
+}
+.info img{
+  display: block;
+  width: 450px;
+  height: 300px;
+  margin: auto;
+  cursor: zoom-in;
+  background-color: transparent;
+  transition: background-color 300ms; 
+  aspect-ratio: auto 992 / 531;
+  overflow: hidden
+}
+.info {
+  max-width: 400px;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.card-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.tv-container {
+  
+  position: relative;
+  width: 480px; 
+  height: 300px; 
+  /* overflow: ;  */
+
+}
+
+.tv-container img {
+  position: relative; 
+  z-index: 1; 
+  width: 100%;
+  height: auto;
+
+  
+}
+
+.tv-container video {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: 0; 
+}

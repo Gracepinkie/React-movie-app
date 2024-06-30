@@ -1,0 +1,25 @@
+.actor-details {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--950);
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  height: 100vh;
+}
+
+.actor-details img {
+  height: 50vh;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.actor-details h1 {
+  color: var(-400);
+  margin-top: 20px;
+}
+
+.actor-details p {
+  color: var(--950);
+  line-height: 1.6;
+}

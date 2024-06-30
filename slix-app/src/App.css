@@ -1,0 +1,237 @@
+/* Theme: Slix */
+:root {
+  --primary-color: #fbff12;
+  --primary-text-color: #000000;
+  ---primary-alt-color: #88680b;
+  --primary-alt-text-color: #f2ff87;
+  --50: #fbfee8;
+  --100: #f7ffc2;
+  --200: #f2ff87;
+  --300: #f2ff43;
+  --400: #efe903;
+  --500: #e5cf0d;
+  --600: #ceb900;
+  --700: #a48604;
+  --800: #88680b;
+  --900: #735510;
+  --950: #000000;
+  font-family: 'Product';
+}
+
+@font-face {
+  font-family: 'Product';
+  src: url('./assets/font/Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  unicode-range: U+0-24F, U+2700-27BF, U+2C00-2DFF, U+E000-F8FF;
+  font-variation-settings: 'wght' 400;
+  src: url('./assets/font/Regular.ttf') format('truetype');
+
+  font-variation-settings: 'wght' 700;
+  src: url('./assets/font/Bold.ttf') format('truetype');
+
+  font-variation-settings: 'wght' 900;
+  src: url('./assets/font/Bold.ttf') format('truetype');
+}
+
+h1 {
+  font-family: 'Product', sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: 'Product', sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: 'Product', sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-family: 'Product', sans-serif;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+menu, ol, ul {
+  list-style: none;
+}
+
+p {
+  font-family: 'Product', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+a {
+  font-family: 'Product', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--400);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #040714;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+/* input {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 25px;
+} */
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu a:hover {
+  color: #1f80e0;
+}
+
+.navbar .search-box {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .search-box input {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+/* .video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.movie-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+} */
+
+/* .movie-info h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.movie-info p {
+  max-width: 600px;
+  font-size: 1.2rem;
+}
+/* Home Page Styles */
+/* .home-page {
+  padding: 100px 20px 20px;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movie-card {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(20% - 20px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card img {
+  width: 100%;
+  border-bottom: 2px solid #444;
+}
+
+.movie-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.movie-card p {
+  font-size: 14px;
+  color: #aaa;
+  padding: 0 10px 10px;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+} */ 
+
+body {
+  width: 100%;
+}
+button {
+  cursor: pointer;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 15px;
+  border-width: 0px;
+}
+
+a:visited {
+  color: var(--500);
+}
+
+a {
+  color: var(--400);
+}
+
+a:hover {
+  color: var(--400);
+}
+::selection {
+  background-color: var(--400);
+  color: var(--950);
+  text-shadow: none;
+}
